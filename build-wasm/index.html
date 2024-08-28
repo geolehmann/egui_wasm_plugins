@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glück Auf - Kaliwerk Zielitz</title>
+</head>
+
+<body>
+    <canvas class="main-canvas" id="canvas"></canvas>
+
+       <script type="module">
+
+        window.addEventListener("load", (event) => {
+
+            document.getElementById('canvas').style.width = "100%";
+            document.getElementById('canvas').style.height = "100%";
+
+            let url = "./egui_wings_example.js";
+
+            import(url).then((module) => {
+                console.log("Loading WASM file...");
+                module.default();
+            });
+        });
+
+
+    </script>
+
+</body>
+
+</html>
