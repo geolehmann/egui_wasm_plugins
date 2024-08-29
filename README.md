@@ -1,9 +1,12 @@
-# egui_wasm_plugins_try2
+# egui_wasm_plugins
 
-Try number two...
+A minimal template to demonstrate the use of egui for a wasm32-unknown-unknown target with additional UI loaded from .wasm plugins.
 
 Usage:
 
-    cargo build --target wasm32-unknown-unknown
-    wasm-bindgen --out-dir build-wasm/ --web target/wasm32-unknown-unknown/debug/egui_wings_example.wasm
-    Serve the index.html thorugh some server and open it in a WebGPU-compatible browser like Chrome
+`git clone`  
+`cd egui_wasm_plugins/egui_wings_example`  
+`cargo build --target wasm32-unknown-unknown`  
+`cd..`  
+`wasm-bindgen --out-dir build-wasm/ --web target/wasm32-unknown-unknown/debug/egui_wings_example.wasm`  
+`Serve the index.html thorugh some server and open it in a WebGPU-compatible browser like Chrome`  
